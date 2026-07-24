@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Türk Academy</title>
+
+    <title>Türk Academy by Maya</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -11,101 +14,118 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- ========================= -->
+    <!-- الخلفية -->
+    <!-- ========================= -->
+
+    <div class="background"></div>
+
+    <!-- ========================= -->
+    <!-- الشريط العلوي -->
+    <!-- ========================= -->
 
     <header class="navbar">
 
         <div class="logo">
-            TÜRK <span>ACADEMY</span>
+
+            <h1>Türk Academy</h1>
+
+            <span>by Maya</span>
+
         </div>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Courses</a>
-            <a href="#">Levels</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-
-        <div class="actions">
-
-            <button>
-                <i class="fa-solid fa-user"></i>
-                Login
-            </button>
+        <div class="menu">
 
             <button>
                 <i class="fa-solid fa-globe"></i>
-                Language
+                اللغة
             </button>
 
             <button>
                 <i class="fa-solid fa-moon"></i>
-                Dark
+                الوضع الليلي
+            </button>
+
+            <button>
+                <i class="fa-solid fa-music"></i>
+                الموسيقى
             </button>
 
         </div>
 
     </header>
 
-    <!-- ================= HERO ================= -->
+    <!-- ========================= -->
+    <!-- الواجهة الرئيسية -->
+    <!-- ========================= -->
 
     <section class="hero">
 
-        <div class="overlay">
+        <div class="hero-left">
 
-            <h1>
-                Welcome to <br>
-                <span>Türk Academy</span>
-            </h1>
+            <h2>بوابتك إلى تعلم اللغة التركية</h2>
 
             <p>
-                Learn Turkish from the heart of Türkiye through
-                interactive lessons, quizzes, and a complete learning journey.
+
+                تعلم التركية بطريقة احترافية،
+                دروس، اختبارات، ألعاب،
+                تحديات، ومستويات كاملة.
+
             </p>
 
-            <a href="#" class="start-btn">
-                Start Your Journey
-            </a>
+        </div>
+
+        <!-- الباب -->
+
+        <div class="door-container">
+
+            <div class="door-frame">
+
+                <div class="door left-door"></div>
+
+                <div class="door right-door"></div>
+
+                <div class="door-light"></div>
+
+            </div>
+
+            <button id="openDoor">
+
+                <i class="fa-solid fa-key"></i>
+
+                افتح الباب
+
+            </button>
 
         </div>
 
-    </section>
+        <div class="hero-right">
 
-    <!-- ================= FEATURES ================= -->
+            <div class="quote">
 
-    <section class="features">
+                <h3>
 
-        <div class="card">
-            <i class="fa-solid fa-book-open"></i>
-            <h3>Interactive Lessons</h3>
-            <p>Learn Turkish step by step with organized lessons.</p>
-        </div>
+                    تعلم لغة جديدة
 
-        <div class="card">
-            <i class="fa-solid fa-list-check"></i>
-            <h3>Smart Quizzes</h3>
-            <p>Practice after every lesson and improve quickly.</p>
-        </div>
+                    <br>
 
-        <div class="card">
-            <i class="fa-solid fa-medal"></i>
-            <h3>Certificates</h3>
-            <p>Earn certificates after completing each level.</p>
-        </div>
+                    وافتح لنفسك عالماً جديداً
 
-        <div class="card">
-            <i class="fa-solid fa-earth-europe"></i>
-            <h3>Real Turkish</h3>
-            <p>Speak naturally like native Turkish speakers.</p>
+                </h3>
+
+            </div>
+
         </div>
 
     </section>
@@ -113,4 +133,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
