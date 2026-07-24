@@ -1,6 +1,5 @@
 /* ==========================================
-   TÜRK ACADEMY
-   Premium UI v1.0
+   TÜRK ACADEMY - STYLE.CSS
 ========================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
@@ -10,9 +9,9 @@
     --primary-light:#A61D48;
     --gold:#D4AF37;
     --dark:#08111F;
+    --white:#FFFFFF;
     --glass:rgba(255,255,255,.08);
     --border:rgba(255,255,255,.12);
-    --white:#ffffff;
 }
 
 *{
@@ -31,14 +30,16 @@ body{
     color:var(--white);
 
     background:
-        linear-gradient(rgba(6,10,20,.72), rgba(20,0,15,.88)),
+        linear-gradient(rgba(8,10,20,.75),rgba(20,0,15,.90)),
         url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=2200&q=100");
 
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
+
     overflow-x:hidden;
 }
+
 /* ==========================
    NAVBAR
 ========================== */
@@ -54,7 +55,7 @@ body{
     padding:20px 8%;
     background:rgba(0,0,0,.25);
     backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(255,255,255,.1);
+    border-bottom:1px solid var(--border);
     z-index:1000;
 }
 
@@ -62,11 +63,10 @@ body{
     font-size:34px;
     font-weight:800;
     letter-spacing:2px;
-    color:#ffffff;
 }
 
 .logo span{
-    color:#D4AF37;
+    color:var(--gold);
 }
 
 nav{
@@ -75,7 +75,7 @@ nav{
 }
 
 nav a{
-    color:#ffffff;
+    color:var(--white);
     text-decoration:none;
     font-size:17px;
     font-weight:600;
@@ -83,7 +83,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#D4AF37;
+    color:var(--gold);
 }
 
 .actions{
@@ -95,15 +95,15 @@ nav a:hover{
     padding:12px 20px;
     border:none;
     border-radius:12px;
-    background:#7B1735;
-    color:#ffffff;
-    font-weight:700;
+    background:var(--primary);
+    color:var(--white);
     cursor:pointer;
+    font-weight:700;
     transition:.3s;
 }
 
 .actions button:hover{
-    background:#A61D48;
+    background:var(--primary-light);
     transform:translateY(-2px);
 }
 /* ==========================
@@ -120,42 +120,107 @@ nav a:hover{
 }
 
 .overlay{
-    max-width:850px;
+    max-width:900px;
     padding:60px;
-    border-radius:25px;
+    border-radius:30px;
     background:rgba(255,255,255,.08);
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255
+/* ==========================
+   FEATURES
+========================== */
+
+.features{
+    width:90%;
+    max-width:1300px;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding-bottom:80px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
     border:1px solid rgba(255,255,255,.12);
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
+    border-radius:24px;
+    padding:35px;
+    text-align:center;
+    transition:.35s ease;
 }
 
-.overlay h1{
-    font-size:64px;
-    font-weight:800;
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(123,23,53,.35);
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+.card i{
+    font-size:48px;
+    color:#D4AF37;
     margin-bottom:20px;
-    line-height:1.2;
 }
 
-.overlay p{
-    font-size:22px;
-    line-height:1.8;
-    color:#f1f1f1;
-    margin-bottom:35px;
-}
-
-.start-btn{
-    display:inline-block;
-    padding:18px 45px;
-    background:linear-gradient(135deg,#7B1735,#A61D48);
-    color:#fff;
-    text-decoration:none;
-    border-radius:15px;
-    font-size:20px;
+.card h3{
+    font-size:24px;
+    margin-bottom:15px;
     font-weight:700;
-    transition:.3s;
 }
 
-.start-btn:hover{
-    transform:translateY(-3px) scale(1.03);
-    box-shadow:0 15px 35px rgba(123,23,53,.4);
+.card p{
+    color:#e8e8e8;
+    line-height:1.8;
 }
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:18px;
+        padding:18px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .overlay{
+        padding:40px 25px;
+    }
+
+    .overlay h1{
+        font-size:44px;
+    }
+
+    .overlay p{
+        font-size:18px;
+    }
+
+    .actions{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .overlay h1{
+        font-size:34px;
+    }
+
+    .overlay p{
+        font-size:16px;
+    }
+
+    .start-btn{
+        width:100%;
+    }
+
+}                          
