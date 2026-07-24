@@ -1,5 +1,5 @@
 /* ==========================================
-   TÜRK ACADEMY - STYLE.CSS
+   TÜRK ACADEMY by Maya
 ========================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
@@ -27,200 +27,359 @@ html{
 
 body{
     min-height:100vh;
-    color:var(--white);
+    overflow-x:hidden;
+    color:#fff;
+    background:#08111F;
+}
+
+/* =======================
+   الخلفية
+======================= */
+
+.background{
+    position:fixed;
+    inset:0;
 
     background:
-        linear-gradient(rgba(8,10,20,.75),rgba(20,0,15,.90)),
+        linear-gradient(rgba(8,10,20,.70),rgba(20,0,15,.85)),
         url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=2200&q=100");
 
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
 
-    overflow-x:hidden;
+    z-index:-2;
 }
 
-/* ==========================
+/* =======================
    NAVBAR
-========================== */
+======================= */
 
 .navbar{
-    position:fixed;
-    top:0;
-    left:0;
+
     width:100%;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     padding:20px 8%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    backdrop-filter:blur(15px);
+
     background:rgba(0,0,0,.25);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid var(--border);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
     z-index:1000;
+
 }
 
-.logo{
+.logo h1{
+
     font-size:34px;
-    font-weight:800;
-    letter-spacing:2px;
+
+    color:#fff;
+
 }
 
 .logo span{
+
     color:var(--gold);
+
+    font-size:15px;
+
 }
 
-nav{
+.menu{
+
     display:flex;
-    gap:30px;
-}
 
-nav a{
-    color:var(--white);
-    text-decoration:none;
-    font-size:17px;
-    font-weight:600;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:var(--gold);
-}
-
-.actions{
-    display:flex;
     gap:12px;
+
 }
 
-.actions button{
-    padding:12px 20px;
+.menu button{
+
+    background:rgba(255,255,255,.08);
+
     border:none;
+
+    color:#fff;
+
+    padding:12px 18px;
+
     border-radius:12px;
-    background:var(--primary);
-    color:var(--white);
+
     cursor:pointer;
-    font-weight:700;
+
     transition:.3s;
+
 }
 
-.actions button:hover{
-    background:var(--primary-light);
-    transform:translateY(-2px);
+.menu button:hover{
+
+    background:var(--primary);
+
 }
-/* ==========================
-   HERO SECTION
-========================== */
+/* =======================
+   HERO
+======================= */
 
 .hero{
     min-height:100vh;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    text-align:center;
-    padding:120px 20px 60px;
+    padding:140px 8% 60px;
+    gap:50px;
 }
 
-.overlay{
-    max-width:900px;
-    padding:60px;
-    border-radius:30px;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(20px);
-    border:1px solid rgba(255,255,255
-/* ==========================
-   FEATURES
-========================== */
-
-.features{
-    width:90%;
-    max-width:1300px;
-    margin:80px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    padding-bottom:80px;
+.hero-left,
+.hero-right{
+    flex:1;
 }
 
-.card{
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(18px);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:24px;
-    padding:35px;
-    text-align:center;
-    transition:.35s ease;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    background:rgba(123,23,53,.35);
-    box-shadow:0 20px 45px rgba(0,0,0,.35);
-}
-
-.card i{
-    font-size:48px;
-    color:#D4AF37;
+.hero-left h2{
+    font-size:52px;
     margin-bottom:20px;
+    line-height:1.4;
 }
 
-.card h3{
-    font-size:24px;
-    margin-bottom:15px;
-    font-weight:700;
+.hero-left p{
+    font-size:20px;
+    color:#e7e7e7;
+    line-height:2;
+    max-width:500px;
 }
 
-.card p{
-    color:#e8e8e8;
+.quote{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:35px;
+}
+
+.quote h3{
+    font-size:30px;
     line-height:1.8;
+    color:#fff;
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
+/* =======================
+   DOOR
+======================= */
 
-@media(max-width:900px){
+.door-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+}
+
+.door-frame{
+    position:relative;
+    width:300px;
+    height:460px;
+    border:12px solid #4b2a17;
+    border-radius:10px;
+    overflow:hidden;
+    background:#1d120d;
+    box-shadow:0 0 40px rgba(0,0,0,.5);
+}
+
+.door{
+    position:absolute;
+    top:0;
+    width:50%;
+    height:100%;
+    background:linear-gradient(#8a5b2d,#5d3517);
+    transition:1.2s ease;
+    z-index:2;
+}
+
+.left-door{
+    left:0;
+    border-right:2px solid #2b1608;
+}
+
+.right-door{
+    right:0;
+    border-left:2px solid #2b1608;
+}
+
+.door-light{
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle,#ffe9a8,#d4af37,#8b5c00);
+    opacity:0;
+    transition:1s;
+}
+/* =======================
+   OPEN BUTTON
+======================= */
+
+#openDoor{
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(135deg,#7B1735,#A61D48);
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(123,23,53,.45);
+
+}
+
+#openDoor:hover{
+
+    transform:translateY(-4px) scale(1.03);
+
+    box-shadow:0 20px 45px rgba(123,23,53,.60);
+
+}
+
+#openDoor i{
+
+    margin-left:10px;
+
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media (max-width:992px){
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:120px 30px 60px;
+
+    }
+
+    .hero-left p{
+
+        margin:auto;
+
+    }
+
+    .hero-left h2{
+
+        font-size:40px;
+
+    }
+
+    .quote{
+
+        margin-top:20px;
+
+    }
+
+}
+
+@media (max-width:768px){
 
     .navbar{
+
         flex-direction:column;
+
         gap:18px;
+
         padding:18px;
+
     }
 
-    nav{
+    .menu{
+
         flex-wrap:wrap;
+
         justify-content:center;
+
     }
 
-    .overlay{
-        padding:40px 25px;
+    .door-frame{
+
+        width:230px;
+
+        height:350px;
+
     }
 
-    .overlay h1{
-        font-size:44px;
+    .hero-left h2{
+
+        font-size:32px;
+
     }
 
-    .overlay p{
+    .hero-left p{
+
+        font-size:17px;
+
+    }
+
+    #openDoor{
+
+        width:100%;
+
+        max-width:280px;
+
         font-size:18px;
-    }
 
-    .actions{
-        flex-wrap:wrap;
-        justify-content:center;
     }
 
 }
 
-@media(max-width:600px){
+@media (max-width:480px){
 
-    .overlay h1{
-        font-size:34px;
+    .logo h1{
+
+        font-size:28px;
+
     }
 
-    .overlay p{
-        font-size:16px;
+    .door-frame{
+
+        width:190px;
+
+        height:300px;
+
     }
 
-    .start-btn{
-        width:100%;
+    .hero-left h2{
+
+        font-size:28px;
+
     }
 
-}                          
+    .quote h3{
+
+        font-size:22px;
+
+    }
+
+}
