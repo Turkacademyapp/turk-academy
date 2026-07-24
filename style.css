@@ -1,1 +1,161 @@
+/* ==========================================
+   TÜRK ACADEMY
+   Premium UI v1.0
+========================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
+
+:root{
+    --primary:#7B1735;
+    --primary-light:#A61D48;
+    --gold:#D4AF37;
+    --dark:#08111F;
+    --glass:rgba(255,255,255,.08);
+    --border:rgba(255,255,255,.12);
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Cairo',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    color:var(--white);
+
+    background:
+        linear-gradient(rgba(6,10,20,.72), rgba(20,0,15,.88)),
+        url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=2200&q=100");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    overflow-x:hidden;
+}
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,.25);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.1);
+    z-index:1000;
+}
+
+.logo{
+    font-size:34px;
+    font-weight:800;
+    letter-spacing:2px;
+    color:#ffffff;
+}
+
+.logo span{
+    color:#D4AF37;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#D4AF37;
+}
+
+.actions{
+    display:flex;
+    gap:12px;
+}
+
+.actions button{
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    background:#7B1735;
+    color:#ffffff;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.actions button:hover{
+    background:#A61D48;
+    transform:translateY(-2px);
+}
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 60px;
+}
+
+.overlay{
+    max-width:850px;
+    padding:60px;
+    border-radius:25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.overlay h1{
+    font-size:64px;
+    font-weight:800;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.overlay p{
+    font-size:22px;
+    line-height:1.8;
+    color:#f1f1f1;
+    margin-bottom:35px;
+}
+
+.start-btn{
+    display:inline-block;
+    padding:18px 45px;
+    background:linear-gradient(135deg,#7B1735,#A61D48);
+    color:#fff;
+    text-decoration:none;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.start-btn:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 15px 35px rgba(123,23,53,.4);
+}
