@@ -1,35 +1,21 @@
-const button = document.getElementById("openDoor");
+document.addEventListener("DOMContentLoaded", () => {
 
-const leftDoor = document.querySelector(".left-door");
-const rightDoor = document.querySelector(".right-door");
-const light = document.querySelector(".door-light");
+const button = document.querySelector(".start");
 
 button.addEventListener("click", () => {
 
-    leftDoor.style.transform = "rotateY(-105deg)";
+button.innerHTML = "✨ جاري فتح البوابة...";
 
-    rightDoor.style.transform = "rotateY(105deg)";
+button.style.transform="scale(1.08)";
 
-    light.style.opacity = "1";
-
-    button.innerHTML = "جاري الدخول...";
-
-    setTimeout(() => {
-
-        alert("مرحبًا بك في Türk Academy by Maya");
-
-        // لاحقًا سننتقل إلى صفحة الأبواب
-        // window.location.href = "academy.html";
-
-    },1800);
-
-});
-document.getElementById("openGate").onclick=function(){
-
-document.querySelector(".gate").style.transform="scale(1.08)";
+button.style.boxShadow="0 0 40px gold";
 
 setTimeout(()=>{
-window.location.href="doors.html";
-},900);
 
-}
+window.location.href="doors.html";
+
+},1200);
+
+});
+
+});
