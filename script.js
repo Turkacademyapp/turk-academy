@@ -24,3 +24,12 @@ button.addEventListener("click", () => {
     },1800);
 
 });
+document.getElementById("openGate").onclick=function(){
+
+document.querySelector(".gate").style.transform="scale(1.08)";
+
+setTimeout(()=>{
+window.location.href="doors.html";
+},900);
+
+}
