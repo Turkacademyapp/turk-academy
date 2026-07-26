@@ -1,21 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
-
+document.addEventListener("DOMContentLoaded", () => { 
 const button = document.querySelector(".start");
 
 button.addEventListener("click", () => {
 
-button.innerHTML = "✨ جاري فتح البوابة...";
+button.style.transform = "scale(1.03)";
 
-button.style.transform="scale(1.08)";
+setTimeout(() => {
 
-button.style.boxShadow="0 0 40px gold";
+window.location.href = "doors.html";
 
-setTimeout(()=>{
-
-window.location.href="doors.html";
-
-},1200);
+}, 1200);
 
 });
 
-});
