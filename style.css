@@ -1,228 +1,457 @@
+/* =========================
+   TURK ACADEMY BY MAYA
+   PART 1
+========================= */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Cairo',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-background:#081521;
+
+font-family:'Cairo',sans-serif;
+
+background:#07111d;
+
+overflow:hidden;
+
 color:white;
-overflow-x:hidden;
+
+height:100vh;
+
+position:relative;
+
+}
+
+/* الخلفية */
+
+.background{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background-image:
+linear-gradient(rgba(5,10,18,.45),rgba(5,10,18,.60)),
+url("assets/images/background.webp");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+z-index:-10;
+
 }
 
 /* ================= HEADER ================= */
 
 header{
+
 position:absolute;
+
 top:0;
+
 left:0;
+
 width:100%;
-padding:25px 7%;
+
+padding:28px 6%;
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
-z-index:1000;
+
+z-index:100;
+
+}
+
+/* الشعار */
+
+.logo{
+
+display:flex;
+
+flex-direction:column;
+
 }
 
 .logo h1{
-font-size:42px;
-color:#F7D774;
+
+font-size:48px;
+
+font-weight:800;
+
+color:#f7d774;
+
+letter-spacing:1px;
+
+text-shadow:
+
+0 0 15px rgba(255,215,0,.35);
+
 }
 
-.logo span{
-color:#ddd;
-font-size:18px;
+.logo h2{
+
+margin-top:-5px;
+
+font-size:24px;
+
+font-weight:600;
+
+font-style:italic;
+
+color:#fff5cb;
+
+opacity:.95;
+
 }
 
-nav{
+/* أيقونات الأعلى */
+
+.top-buttons{
+
 display:flex;
-gap:15px;
+
+align-items:center;
+
+gap:16px;
+
 }
 
-nav button{
-width:55px;
-height:55px;
+.top-buttons button{
+
+width:64px;
+
+height:64px;
+
 border-radius:50%;
-border:none;
+
+border:1px solid rgba(255,255,255,.18);
+
 background:rgba(255,255,255,.08);
+
 backdrop-filter:blur(10px);
-font-size:22px;
+
 cursor:pointer;
-transition:.3s;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+transition:.35s;
+
+color:white;
+
+font-size:20px;
+
 }
 
-nav button:hover{
-background:#D8AF4F;
-transform:scale(1.08);
+.top-buttons button span{
+
+font-size:10px;
+
+margin-top:2px;
+
+}
+
+.top-buttons button:hover{
+
+transform:translateY(-4px);
+
+background:#cfa63c;
+
+box-shadow:
+
+0 0 25px rgba(255,215,0,.55);
+
 }
 
 /* ================= HERO ================= */
 
-.hero{
+main{
+
+width:100%;
 
 height:100vh;
 
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1800&q=80");
-
-background-size:cover;
-background-position:center;
-
 display:flex;
+
 justify-content:center;
+
 align-items:center;
 
-text-align:center;
+}
 
-padding:20px;
+.hero{
+
+width:100%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+}
+/* =========================
+   PART 2
+========================= */
+
+.gate-container{
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+width:100%;
+
+margin-top:60px;
 
 }
 
-.overlay{
+/* توهج خلف الباب */
 
-max-width:800px;
+.gate-container::before{
+
+content:"";
+
+position:absolute;
+
+width:650px;
+
+height:650px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,
+rgba(255,215,0,.35) 0%,
+rgba(255,215,0,.15) 35%,
+transparent 75%);
+
+filter:blur(30px);
+
+animation:glow 4s ease-in-out infinite;
+
+z-index:0;
 
 }
 
-.overlay h2{
+/* الباب */
 
-font-size:60px;
+.gate{
 
-margin-bottom:20px;
+position:relative;
 
-text-shadow:0 0 15px #000;
+z-index:2;
+
+width:430px;
+
+max-width:90vw;
+
+height:auto;
+
+filter:
+
+drop-shadow(0 20px 35px rgba(0,0,0,.65))
+
+drop-shadow(0 0 25px rgba(255,215,0,.25));
+
+transition:.45s;
+
+cursor:pointer;
 
 }
 
-.overlay p{
+/* حركة بسيطة */
 
-font-size:24px;
+.gate:hover{
 
-margin-bottom:35px;
-
-color:#ececec;
+transform:scale(1.03);
 
 }
 
-.start{
+/* أرضية مضيئة */
 
-padding:18px 60px;
+.gate-container::after{
 
-font-size:24px;
+content:"";
 
-background:#D4AF37;
+position:absolute;
+
+bottom:-25px;
+
+width:420px;
+
+height:55px;
+
+background:radial-gradient(circle,
+rgba(255,215,0,.45),
+transparent 70%);
+
+filter:blur(18px);
+
+z-index:1;
+
+}
+
+/* حركة التوهج */
+
+@keyframes glow{
+
+0%{
+
+transform:scale(1);
+
+opacity:.75;
+
+}
+
+50%{
+
+transform:scale(1.06);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:.75;
+
+}
+
+}
+/* =========================
+   PART 3
+========================= */
+
+.open-btn{
+
+margin-top:35px;
+
+padding:18px 65px;
 
 border:none;
 
 border-radius:60px;
 
+font-size:24px;
+
+font-weight:700;
+
+font-family:'Cairo',sans-serif;
+
+color:#fff;
+
 cursor:pointer;
 
-font-weight:bold;
+background:linear-gradient(180deg,#c81d25,#7a0812);
 
-transition:.4s;
+border:3px solid #d8b35d;
 
-}
+box-shadow:
+0 0 20px rgba(255,215,0,.35),
+0 12px 30px rgba(0,0,0,.45);
 
-.start:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 0 35px #D4AF37;
+transition:.35s;
 
 }
 
-/* ================= FOOTER ================= */
+.open-btn:hover{
 
-footer{
+transform:translateY(-4px) scale(1.03);
 
-position:fixed;
-
-bottom:0;
-
-left:0;
-
-width:100%;
-
-display:flex;
-
-justify-content:center;
-
-gap:35px;
-
-padding:18px;
-
-background:rgba(0,0,0,.35);
-
-backdrop-filter:blur(12px);
+box-shadow:
+0 0 35px rgba(255,215,0,.65),
+0 16px 40px rgba(0,0,0,.55);
 
 }
 
-footer a{
+.open-btn:active{
 
-color:white;
-
-text-decoration:none;
-
-font-size:18px;
-
-transition:.3s;
+transform:scale(.97);
 
 }
 
-footer a:hover{
-
-color:#F7D774;
-
-}
-
-/* ================= Responsive ================= */
+/* =========================
+   Responsive
+========================= */
 
 @media(max-width:900px){
 
 .logo h1{
 
-font-size:28px;
+font-size:34px;
 
 }
 
-.overlay h2{
-
-font-size:36px;
-
-}
-
-.overlay p{
+.logo h2{
 
 font-size:18px;
 
 }
 
-footer{
+.gate{
 
-gap:15px;
-flex-wrap:wrap;
-
-}
-
-footer a{
-
-font-size:15px;
+width:300px;
 
 }
 
-nav button{
+.top-buttons{
 
-width:45px;
-height:45px;
+gap:10px;
 
 }
 
-.start{
+.top-buttons button{
+
+width:52px;
+
+height:52px;
+
+font-size:17px;
+
+}
+
+.top-buttons button span{
+
+display:none;
+
+}
+
+.open-btn{
 
 font-size:18px;
+
 padding:15px 35px;
 
 }
