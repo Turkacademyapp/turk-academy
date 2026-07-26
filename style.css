@@ -482,16 +482,39 @@ padding:15px 35px;
 .open-gate-btn{
     position:absolute;
     left:50%;
-    bottom:40px;
+    bottom:35px;
     transform:translateX(-50%);
-    background:linear-gradient(#7a1f3b,#4d1125);
-    color:white;
-    border:2px solid #d4a44f;
-    border-radius:22px;
-    padding:16px 42px;
-    font-size:28px;
-    font-weight:bold;
+    padding:18px 55px;
+
+    background:linear-gradient(180deg,#8b2345,#5a1028);
+
+    color:#fff8df;
+    font-size:30px;
+    font-weight:700;
+
+    border:3px solid #d9b25b;
+    border-radius:18px;
+
+    box-shadow:
+    0 0 12px rgba(255,215,120,.6),
+    0 0 30px rgba(255,190,60,.45),
+    inset 0 0 15px rgba(255,255,255,.15);
+
+    text-shadow:
+    0 0 8px rgba(255,255,255,.6);
+
     cursor:pointer;
+    transition:.35s;
     z-index:100;
-    box-shadow:0 0 25px rgba(255,215,120,.6);
+}
+
+.open-gate-btn:hover{
+    transform:translateX(-50%) scale(1.08);
+    box-shadow:
+    0 0 18px rgba(255,220,120,.9),
+    0 0 45px rgba(255,190,60,.75);
+}
+
+.open-gate-btn:active{
+    transform:translateX(-50%) scale(.96);
 }
