@@ -1,48 +1,100 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Türk Academy</title>
+<meta charset="UTF-8">
 
-  <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+<title>Turk Academy</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="overlay">
+<div class="background"></div>
 
-    <h1 class="logo">
-        Türk Academy
-    </h1>
+<header>
 
-    <p class="author">
-        by Maya
-    </p>
+<div class="logo">
 
-    <p class="subtitle">
-        بوابتك إلى تعلم اللغة التركية
-    </p>
+<h1>Turk Academy</h1>
 
-    <div class="door-container">
-
-        <img
-        id="gate"
-        src="assets/images/gate.png"
-        alt="Ottoman Gate">
-
-    </div>
-
-    <button id="openGate">
-        افتح البوابة
-    </button>
+<h2>By Maya</h2>
 
 </div>
+
+<div class="top-buttons">
+
+<button id="language">
+
+🌍
+
+<span>اللغة</span>
+
+</button>
+
+<button id="theme">
+
+🌙
+
+<span>الوضع الليلي</span>
+
+</button>
+
+<button id="music">
+
+🎵
+
+<span>الموسيقى</span>
+
+</button>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="gate-container">
+
+<img
+
+src="assets/images/gate.webp"
+
+alt="Gate"
+
+class="gate"
+
+id="gate"
+
+>
+
+</div>
+
+<button class="open-btn" id="openGate">
+
+🔑 افتح البوابة
+
+</button>
+
+</section>
+
+</main>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
