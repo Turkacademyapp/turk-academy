@@ -518,3 +518,96 @@ padding:15px 35px;
 .open-gate-btn:active{
     transform:translateX(-50%) scale(.96);
 }
+/* =========================
+   إعدادات الصفحة
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+    font-family: "Arial", sans-serif;
+}
+
+
+/* =========================
+   خلفية البوابة
+========================= */
+
+.gate-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* صورة الخلفية */
+.gate-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+
+/* =========================
+   البابان (يمين ويسار)
+========================= */
+
+.door {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2s ease;
+    z-index: 2;
+}
+
+
+/* الباب الأيسر */
+.left-door {
+    left: 0;
+}
+
+
+/* الباب الأيمن */
+.right-door {
+    right: 0;
+}
+
+
+/* =========================
+   زر افتح البوابة
+========================= */
+
+.open-btn {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 18px 50px;
+    font-size: 25px;
+    color: white;
+    background: linear-gradient(45deg,#8b5a2b,#d4af37);
+    border: 2px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+
+/* تأثير عند مرور الماوس */
+.open-btn:hover {
+    transform: translateX(-50%) scale(1.1);
+}
