@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const gateScreen = document.querySelector(".gate-screen");
-    const openBtn = document.getElementById("openGate");
+const button = document.querySelector(".start");
 
-    openBtn.addEventListener("click", () => {
+button.addEventListener("click", () => {
 
-        openBtn.disabled = true;
+    document.body.classList.add("entering");
 
-        gateScreen.classList.add("open");
+    setTimeout(() => {
+        window.location.href = "doors.html";
+    }, 900);
 
-        setTimeout(() => {
-
-            window.location.href = "doors.html";
-
-        }, 1500);
-
-    });
+});
 
 });
