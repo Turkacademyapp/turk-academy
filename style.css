@@ -1,613 +1,156 @@
 /* =========================
-   TURK ACADEMY BY MAYA
-   PART 1
+   Turk Academy by Maya
 ========================= */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
+html,
 body{
-
-font-family:'Cairo',sans-serif;
-
-background:#07111d;
-
-overflow:hidden;
-
-color:white;
-
-height:100vh;
-
-position:relative;
-
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:"Cairo",sans-serif;
+    background:#000;
 }
 
-/* الخلفية */
+/* الصفحة */
 
-.background{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-background:#07111d;
-
-z-index:-10;
-
+.gate-screen{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
 }
 
-/* ================= HEADER ================= */
+/* صورة البوابة */
 
-header{
-
-position:absolute;
-
-top:20px;
-
-left:0;
-
-width:100%;
-
-padding:28px 6%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-z-index:100;
-
+.gate-image{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    transition:transform 1.4s ease-in-out;
+    z-index:1;
 }
 
-/* الشعار */
+/* عند الصعود */
 
-.logo{
-
-display:flex;
-
-flex-direction:column;
-
+.gate-screen.open .gate-image{
+    transform:translateY(-100%);
 }
 
-.logo h1{
-
-font-size:48px;
-
-font-weight:800;
-
-color:#f7d774;
-
-letter-spacing:1px;
-
-text-shadow:
-
-0 0 15px rgba(255,215,0,.35);
-
-}
-
-.logo h2{
-
-margin-top:-5px;
-
-font-size:24px;
-
-font-weight:600;
-
-font-style:italic;
-
-color:#fff5cb;
-
-opacity:.95;
-
-}
-
-/* أيقونات الأعلى */
+/* أزرار الأعلى */
 
 .top-buttons{
-
-display:flex;
-
-align-items:center;
-
-gap:16px;
-
+    position:absolute;
+    top:20px;
+    right:20px;
+    display:flex;
+    gap:12px;
+    z-index:5;
 }
 
 .top-buttons button{
-
-width:64px;
-
-height:64px;
-
-border-radius:50%;
-
-border:1px solid rgba(255,255,255,.18);
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(10px);
-
-cursor:pointer;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-transition:.35s;
-
-color:white;
-
-font-size:20px;
-
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:rgba(20,20,20,.45);
+    backdrop-filter:blur(8px);
+    color:#fff;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.15);
 }
 
 .top-buttons button span{
-
-font-size:10px;
-
-margin-top:2px;
-
+    font-size:10px;
+    margin-top:3px;
 }
 
 .top-buttons button:hover{
-
-transform:translateY(-4px);
-
-background:#cfa63c;
-
-box-shadow:
-
-0 0 25px rgba(255,215,0,.55);
-
-}
-
-/* ================= HERO ================= */
-
-main{
-    width:100%;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding-top:70px;
-    padding-bottom:70px;
-}
-
-width:100%;
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-}
-
-.hero{
-
-width:100%;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
+    transform:translateY(-3px);
+    background:rgba(201,157,51,.9);
 }
 /* =========================
-   PART 2
-========================= */
-
-.gate-container{
-
-position:relative;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-width:100%;
-
-margin-top:0;
-height:100vh;
-padding-top:40px;
-padding-bottom:40px;
-}
-
-/* توهج خلف الباب */
-
-.gate-container::before{
-
-content:"";
-
-position:absolute;
-
-width:650px;
-
-height:650px;
-
-border-radius:50%;
-
-background:radial-gradient(circle,
-rgba(255,215,0,.35) 0%,
-rgba(255,215,0,.15) 35%,
-transparent 75%);
-
-filter:blur(30px);
-
-animation:glow 4s ease-in-out infinite;
-
-z-index:0;
-
-}
-
-/* الباب */
-
-.gate{
-
-position:relative;
-
-z-index:2;
-
-width:100vw;
-max-width:1400px;
- object-fit:contain;  
-
-height:auto;
-
-filter:
-
-drop-shadow(0 20px 35px rgba(0,0,0,.65))
-
-drop-shadow(0 0 25px rgba(255,215,0,.25));
-
-transition:.45s;
-
-cursor:pointer;
-
-}
-
-/* حركة بسيطة */
-
-.gate:hover{
-
-transform:scale(1.03);
-
-}
-
-/* أرضية مضيئة */
-
-.gate-container::after{
-
-content:"";
-
-position:absolute;
-
-bottom:-25px;
-
-width:420px;
-
-height:55px;
-
-background:radial-gradient(circle,
-rgba(255,215,0,.45),
-transparent 70%);
-
-filter:blur(18px);
-
-z-index:1;
-
-}
-
-/* حركة التوهج */
-
-@keyframes glow{
-
-0%{
-
-transform:scale(1);
-
-opacity:.75;
-
-}
-
-50%{
-
-transform:scale(1.06);
-
-opacity:1;
-
-}
-
-100%{
-
-transform:scale(1);
-
-opacity:.75;
-
-}
-
-}
-/* =========================
-   PART 3
+   زر فتح البوابة
 ========================= */
 
 .open-btn{
+    position:absolute;
+    left:50%;
+    bottom:45px;
+    transform:translateX(-50%);
+    z-index:10;
 
-margin-top:20px;
+    padding:18px 55px;
 
-padding:18px 65px;
+    border:none;
+    border-radius:50px;
 
-border:none;
+    background:linear-gradient(135deg,#f7d774,#b8860b);
 
-border-radius:60px;
+    color:#2b1b00;
 
-font-size:24px;
+    font-size:24px;
+    font-weight:800;
 
-font-weight:700;
+    cursor:pointer;
 
-font-family:'Cairo',sans-serif;
+    transition:.35s;
 
-color:#fff;
-
-cursor:pointer;
-
-background:linear-gradient(180deg,#c81d25,#7a0812);
-
-border:3px solid #d8b35d;
-
-box-shadow:
-0 0 20px rgba(255,215,0,.35),
-0 12px 30px rgba(0,0,0,.45);
-
-transition:.35s;
-
+    box-shadow:
+        0 0 20px rgba(255,215,0,.45),
+        0 10px 35px rgba(0,0,0,.45);
 }
 
 .open-btn:hover{
-
-transform:translateY(-4px) scale(1.03);
-
-box-shadow:
-0 0 35px rgba(255,215,0,.65),
-0 16px 40px rgba(0,0,0,.55);
-
+    transform:translateX(-50%) scale(1.05);
+    box-shadow:
+        0 0 35px rgba(255,215,0,.75),
+        0 10px 40px rgba(0,0,0,.55);
 }
 
 .open-btn:active{
-
-transform:scale(.97);
-
+    transform:translateX(-50%) scale(.98);
 }
 
 /* =========================
-   Responsive
+   الهاتف
 ========================= */
 
-@media(max-width:900px){
+@media (max-width:768px){
 
-.logo h1{
+    .top-buttons{
+        top:15px;
+        right:15px;
+        gap:8px;
+    }
 
-font-size:34px;
+    .top-buttons button{
+        width:50px;
+        height:50px;
+    }
 
-}
+    .top-buttons button span{
+        font-size:8px;
+    }
 
-.logo h2{
-
-font-size:18px;
-
-}
-
-.gate{
-
-width:300px;
-
-}
-
-.top-buttons{
-
-gap:10px;
-
-}
-
-.top-buttons button{
-
-width:52px;
-
-height:52px;
-
-font-size:17px;
-
-}
-
-.top-buttons button span{
-
-display:none;
-
-}
-
-.open-btn{
-
-font-size:18px;
-
-padding:15px 35px;
-
-}
-
-}
-.top-buttons{
-    position:absolute;
-    top:30px;
-    right:30px;
-    display:flex;
-    gap:15px;
-    z-index:100;
-}
-
-.top-buttons button{
-    background:rgba(30,20,20,0.65);
-    color:#f3d28a;
-    border:2px solid #d4a44f;
-    border-radius:18px;
-    padding:10px 18px;
-    font-size:18px;
-    cursor:pointer;
-    backdrop-filter:blur(6px);
-}
-
-.open-gate-btn{
-    position:absolute;
-    left:50%;
-    bottom:35px;
-    transform:translateX(-50%);
-    padding:18px 55px;
-
-    background:linear-gradient(180deg,#8b2345,#5a1028);
-
-    color:#fff8df;
-    font-size:30px;
-    font-weight:700;
-
-    border:3px solid #d9b25b;
-    border-radius:18px;
-
-    box-shadow:
-    0 0 12px rgba(255,215,120,.6),
-    0 0 30px rgba(255,190,60,.45),
-    inset 0 0 15px rgba(255,255,255,.15);
-
-    text-shadow:
-    0 0 8px rgba(255,255,255,.6);
-
-    cursor:pointer;
-    transition:.35s;
-    z-index:100;
-}
-
-.open-gate-btn:hover{
-    transform:translateX(-50%) scale(1.08);
-    box-shadow:
-    0 0 18px rgba(255,220,120,.9),
-    0 0 45px rgba(255,190,60,.75);
-}
-
-.open-gate-btn:active{
-    transform:translateX(-50%) scale(.96);
-}
-/* =========================
-   إعدادات الصفحة
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: #000;
-    font-family: "Arial", sans-serif;
-}
-
-
-/* =========================
-   خلفية البوابة
-========================= */
-
-.gate-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-
-/* صورة الخلفية */
-.gate-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-}
-
-
-/* =========================
-   البابان (يمين ويسار)
-========================= */
-
-.door {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 2s ease;
-    z-index: 2;
-}
-
-
-/* الباب الأيسر */
-.left-door {
-    left: 0;
-}
-
-
-/* الباب الأيمن */
-.right-door {
-    right: 0;
-}
-
-
-/* =========================
-   زر افتح البوابة
-========================= */
-
-.open-btn {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 18px 50px;
-    font-size: 25px;
-    color: white;
-    background: linear-gradient(45deg,#8b5a2b,#d4af37);
-    border: 2px solid #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    z-index: 5;
-}
-
-
-/* تأثير عند مرور الماوس */
-.open-btn:hover {
-    transform: translateX(-50%) scale(1.1);
+    .open-btn{
+        width:85%;
+        max-width:320px;
+        padding:16px;
+        font-size:20px;
+        bottom:30px;
+    }
 }
