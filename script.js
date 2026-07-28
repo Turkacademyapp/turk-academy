@@ -4,7 +4,11 @@ const button = document.querySelector("#openGate");
 
 button.addEventListener("click", () => {
 
-    window.location.href = "doors.html";
+    document.body.classList.add("entering");
+
+    setTimeout(() => {
+        window.location.href = "doors.html";
+    }, 700);
 
 });
 
