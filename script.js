@@ -1,39 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => { 
+document.addEventListener("DOMContentLoaded", () => {
 
-const button = document.querySelector(".start");
-
-button.addEventListener("click", () => {
-
-    button.style.transform = "scale(1.03)";
-
-    setTimeout(() => {
-
-        window.location.href = "doors.html";
-
-    }, 1200);
-
-});
-
-
-// =====================
-// فتح البوابة
-// =====================
-
-const openBtn = document.querySelector(".open-btn");
-const leftDoor = document.getElementById("leftDoor");
-const rightDoor = document.getElementById("rightDoor");
-
-
-if(openBtn){
+    const gateScreen = document.querySelector(".gate-screen");
+    const openBtn = document.getElementById("openGate");
 
     openBtn.addEventListener("click", () => {
 
-        leftDoor.style.transform = "translateX(-100%)";
+        openBtn.disabled = true;
 
-        rightDoor.style.transform = "translateX(100%)";
+        gateScreen.classList.add("open");
+
+        setTimeout(() => {
+
+            window.location.href = "doors.html";
+
+        }, 1500);
 
     });
-
-}
 
 });
