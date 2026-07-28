@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-const button = document.querySelector(".start");
+const button = document.querySelector("#openGate");
 
 button.addEventListener("click", () => {
 
