@@ -2,66 +2,53 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turk Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turk Academy</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="background"></div>
+<div class="gate-screen">
 
-  <main>
-    <section class="hero">
-      <div class="gate-container">
+    <!-- صورة البوابة -->
+    <img src="gate.png.png" class="gate-image" alt="Turk Academy">
 
-    <img
-        src="background.png"
-        class="gate-background"
-        alt="Background">
+    <!-- أزرار الأعلى -->
+    <div class="top-buttons">
 
-    <img
-        src="door-left.png"
-        class="door left-door"
-        id="leftDoor"
-        alt="Left Door">
+        <button id="languageBtn">
+            🌐
+            <span>اللغة</span>
+        </button>
 
-    <img
-        src="door-right.png"
-        class="door right-door"
-        id="rightDoor"
-        alt="Right Door">
+        <button id="themeBtn">
+            🌙
+            <span>الليلي</span>
+        </button>
 
+        <button id="settingsBtn">
+            ⚙️
+            <span>الإعدادات</span>
+        </button>
 
-    <button class="open-btn">
-        افتح البوابة
+    </div>
+
+    <!-- زر فتح البوابة -->
+    <button id="openGate" class="open-btn">
+        ✨ افتح البوابة
     </button>
 
 </div>
 
-</div>
-    <div class="top-buttons">
-    <button>🌐 اللغة</button>
-    <button>🌙 الوضع الليلي</button>
-    <button>⚙️ الإعدادات</button>
-</div>
-
-<button class="open-gate-btn">
-    🔑 افتح البوابة
-</button>
-
-</section>
-  </main>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
