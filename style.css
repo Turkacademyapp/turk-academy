@@ -154,3 +154,11 @@ body{
         bottom:30px;
     }
 }
+body{
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+body.entering{
+    opacity:0;
+    transform:scale(1.08);
+}
