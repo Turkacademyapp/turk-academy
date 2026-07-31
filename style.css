@@ -90,43 +90,53 @@ body{
 ========================= */
 
 .open-btn{
-    position:absolute;
-    left:50%;
-    bottom:45px;
-    transform:translateX(-50%);
-    z-index:10;
+position:absolute;
+left:50%;
+bottom:45px;
+transform:translateX(-50%);
+z-index:10;
 
-    padding:18px 55px;
+padding:18px 55px;
 
-    border:2px solid rgba(255,230,170,.45);
-    border-radius:50px;
+border:2px solid #d4af37;
+border-radius:55px;
 
-    background:linear-gradient(
-    135deg,
-    #f5d67a 0%,
-    #d4a92a 45%,
-    #9c6d08 100%
-    );
+background:linear-gradient(
+180deg,
+#7d1731 0%,
+#651126 50%,
+#47101c 100%
+);
 
-    color:#2b1b00;
+color:#f8e7b0;
 
-    font-size:24px;
-    font-weight:800;
+font-size:24px;
+font-weight:800;
+letter-spacing:1px;
 
-    cursor:pointer;
+cursor:pointer;
 
-    transition:.35s;
+transition:all .35s ease;
 
-    box-shadow:
-   0 0 12px rgba(255,215,0,.25),
-   0 8px 25px rgba(0,0,0,.45);
+box-shadow:
+0 0 0 2px rgba(120,60,20,.35) inset,
+0 0 18px rgba(212,175,55,.20),
+0 10px 28px rgba(0,0,0,.45);
 }
 
 .open-btn:hover{
-    transform:translateX(-50%) scale(1.05);
-    box-shadow:
-        0 0 35px rgba(255,215,0,.75),
-        0 10px 40px rgba(0,0,0,.55);
+transform:translateX(-50%) scale(1.04);
+
+background:linear-gradient(
+180deg,
+#8f1d3b 0%,
+#74162d 50%,
+#561020 100%
+);
+
+box-shadow:
+0 0 25px rgba(212,175,55,.45),
+0 12px 35px rgba(0,0,0,.55);
 }
 
 .open-btn:active{
