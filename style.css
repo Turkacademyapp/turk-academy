@@ -94,56 +94,62 @@ position:absolute;
 left:50%;
 bottom:45px;
 transform:translateX(-50%);
+position: relative;
+   
 z-index:10;
 
-padding:18px 55px;
-
-border:3px solid #c89b2a;
-border-radius:55px;
+padding:18px 60px;
 
 background:linear-gradient(
 180deg,
-#7d1731 0%,
-#651126 50%,
-#47101c 100%
+#6b1026 0%,
+#57101f 55%,
+#451018 100%
 );
 
-color:#f3d37a;
-text-shadow:0 1px 2px rgba(0,0,0,.4);
+color:#efd78a;
 
 font-size:24px;
 font-weight:800;
-letter-spacing:1px;
+letter-spacing:.5px;
+
+border:3px solid #caa23a;
+border-radius:18px;
 
 cursor:pointer;
 
-transition:all .35s ease;
+transition:.35s;
 
 box-shadow:
-0 0 0 2px rgba(120,60,20,.35) inset,
-0 0 18px rgba(212,175,55,.20),
-0 10px 28px rgba(0,0,0,.45);
+0 4px 0 #8a6615,
+0 10px 25px rgba(0,0,0,.45),
+inset 0 0 0 2px rgba(255,230,170,.18);
+
+overflow:hidden;
 }
 
 .open-btn:hover{
-transform:translateX(-50%) scale(1.04);
+
+transform:translateX(-50%) translateY(-3px);
 
 background:linear-gradient(
 180deg,
-#8f1d3b 0%,
-#74162d 50%,
-#561020 100%
+#7d1731,
+#641123,
+#4f0f1c
 );
 
 box-shadow:
-0 0 25px rgba(212,175,55,.45),
-0 12px 35px rgba(0,0,0,.55);
+0 6px 0 #8a6615,
+0 15px 35px rgba(0,0,0,.55);
+
 }
 
 .open-btn:active{
-    transform:translateX(-50%) scale(.98);
+    transform:translateX(-50%) translateY(1px);
 }
 
+}
 /* =========================
    الهاتف
 ========================= */
@@ -180,4 +186,57 @@ body{
 body.entering{
     opacity:0;
     transform:scale(1.08);
+}
+/* المقبض الأيسر */
+.open-btn::before{
+content:"";
+position:absolute;
+
+left:-14px;
+top:50%;
+transform:translateY(-50%);
+
+width:18px;
+height:18px;
+
+border-radius:50%;
+
+background:radial-gradient(circle at 35% 35%,
+#fff4bf 0%,
+#e4c25c 25%,
+#c89b2a 55%,
+#8f6512 100%);
+
+border:2px solid #6d4c0a;
+
+box-shadow:
+0 0 8px rgba(212,175,55,.35),
+inset 0 0 3px rgba(255,255,255,.5);
+}
+
+/* المقبض الأيمن */
+.open-btn::after{
+content:"";
+position:absolute;
+
+right:-14px;
+top:50%;
+transform:translateY(-50%);
+
+width:18px;
+height:18px;
+
+border-radius:50%;
+
+background:radial-gradient(circle at 35% 35%,
+#fff4bf 0%,
+#e4c25c 25%,
+#c89b2a 55%,
+#8f6512 100%);
+
+border:2px solid #6d4c0a;
+
+box-shadow:
+0 0 8px rgba(212,175,55,.35),
+inset 0 0 3px rgba(255,255,255,.5);
 }
