@@ -98,7 +98,7 @@ z-index:10;
 
 padding:18px 55px;
 
-border:2px solid #d4af37;
+border:3px solid #c89b2a;
 border-radius:55px;
 
 background:linear-gradient(
@@ -108,7 +108,8 @@ background:linear-gradient(
 #47101c 100%
 );
 
-color:#f8e7b0;
+color:#f3d37a;
+text-shadow:0 1px 2px rgba(0,0,0,.4);
 
 font-size:24px;
 font-weight:800;
