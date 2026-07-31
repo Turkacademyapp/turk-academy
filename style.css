@@ -101,7 +101,12 @@ body{
     border:none;
     border-radius:50px;
 
-    background:linear-gradient(135deg,#f7d774,#b8860b);
+    background:linear-gradient(
+    135deg,
+    #f5d67a 0%,
+    #d4a92a 45%,
+    #9c6d08 100%
+    );
 
     color:#2b1b00;
 
@@ -113,8 +118,8 @@ body{
     transition:.35s;
 
     box-shadow:
-        0 0 20px rgba(255,215,0,.45),
-        0 10px 35px rgba(0,0,0,.45);
+   0 0 12px rgba(255,215,0,.25),
+   0 8px 25px rgba(0,0,0,.45);
 }
 
 .open-btn:hover{
