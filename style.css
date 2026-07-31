@@ -98,10 +98,10 @@ body{
 
     padding:18px 55px;
 
-    border:none;
+    border:2px solid rgba(255,230,170,.45);
     border-radius:50px;
 
-    background:red;
+    background:linear-gradient(
     135deg,
     #f5d67a 0%,
     #d4a92a 45%,
