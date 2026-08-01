@@ -47,69 +47,80 @@ body{
 .gate-screen.open .gate-image{
     transform:translateY(-100%);
 }
-
-/* أزرار الأعلى */
+/* =========================
+   أزرار الأعلى
+========================= */
 
 .top-buttons{
     position:absolute;
-    top:20px;
-    right:20px;
+    top:25px;
+    right:25px;
     display:flex;
-    gap:12px;
-    z-index:5;
+    gap:15px;
+    z-index:999;
 }
+
 
 .top-buttons button{
-    width:60px;
-    height:60px;
-    border:none;
+
+    width:65px;
+    height:65px;
+
     border-radius:50%;
-    background:rgba(20,20,20,.45);
-    backdrop-filter:blur(8px);
-    color:#fff;
+
+    background:
+    linear-gradient(
+    145deg,
+    rgba(166,106,44,.35),
+    rgba(30,20,15,.75)
+    );
+
+    border:1px solid #A66A2C;
+
+    color:#E5C06A;
+
     cursor:pointer;
+
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
-    transition:.3s;
-    border:1px solid rgba(255,255,255,.15);
+    justify-content:center;
+
+    font-size:22px;
+
+    box-shadow:
+    0 0 10px rgba(166,106,44,.35),
+    inset 0 0 8px rgba(255,215,120,.15);
+
+    transition:.35s ease;
 }
+
 
 .top-buttons button span{
-    font-size:10px;
-    margin-top:3px;
-}
-.top-buttons{
-    position:absolute;
-    top:20px;
-    right:20px;
-    display:flex;
-    gap:12px;
-    z-index:5;
-}
 
-.top-buttons button{
-    width:60px;
-    height:60px;
-    border:none;
-    border-radius:50%;
-    background:rgba(20,20,20,.45);
-    backdrop-filter:blur(8px);
+    font-size:11px;
+    margin-top:3px;
     color:#fff;
-    cursor:pointer;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    transition:.3s;
-    border:1px solid rgba(255,255,255,.15);
 }
 
-.top-buttons button span{
-    font-size:10px;
-    margin-top:3px;
+
+/* حركة عند المرور */
+
+.top-buttons button:hover{
+
+    transform:translateY(-5px) scale(1.08);
+
+    background:
+    linear-gradient(
+    145deg,
+    rgba(200,155,42,.55),
+    rgba(50,30,15,.9)
+    );
+
+    box-shadow:
+    0 0 20px rgba(200,155,42,.7);
 }
+
 /* =========================
    لوحة فتح البوابة
 ========================= */
