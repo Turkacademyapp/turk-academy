@@ -118,24 +118,30 @@ body{
     transition: all .35s ease;
 }
 
-/* الخط المزخرف يمين ويسار */
+/* ===== الزخرفة اليسرى واليمنى ===== */
+
 .open-btn::before,
 .open-btn::after{
-    content: "❈ ❦ ❈";
-    color: #B88A2A;
-    font-size: 18px;
-    letter-spacing: 4px;
-    display: flex;
-    align-items: center;
-    text-shadow: 0 0 8px rgba(212,175,55,.35);
+    content:"";
+    width:70px;
+    height:22px;
+    position:relative;
+    display:block;
+    margin:0 18px;
 }
 
+/* الورقة الأولى */
 .open-btn::before{
-    margin-right: 18px;
+    border-top:2px solid #B8860B;
+    border-radius:0 100% 0 100%;
+    transform:rotate(-8deg);
 }
 
+/* الورقة الثانية */
 .open-btn::after{
-    margin-left: 18px;
+    border-top:2px solid #B8860B;
+    border-radius:100% 0 100% 0;
+    transform:rotate(8deg);
 }
 
 .open-btn:hover{
