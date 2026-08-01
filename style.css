@@ -269,3 +269,20 @@ body.entering{
     border-radius:10px;
 
 }
+.language-menu{
+    animation: menuShow .3s ease;
+}
+
+@keyframes menuShow{
+
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
