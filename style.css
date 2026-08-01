@@ -404,3 +404,16 @@ body.entering{
     0 25px 50px rgba(0,0,0,.5);
 
 }
+.rotate-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:12px;
+
+    border:1px solid rgba(120,80,30,.25);
+
+    pointer-events:none;
+
+}
