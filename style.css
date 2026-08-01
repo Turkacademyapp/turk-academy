@@ -403,3 +403,25 @@ body.entering{
     position:relative;
 
 }
+.ottoman-top,
+.ottoman-bottom{
+
+    font-size:28px;
+
+    color:#9b6a2d;
+
+    letter-spacing:8px;
+
+}
+
+.ottoman-top{
+
+    margin-bottom:20px;
+
+}
+
+.ottoman-bottom{
+
+    margin-top:20px;
+
+}
