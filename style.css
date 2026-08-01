@@ -80,10 +80,62 @@ body{
     font-size:10px;
     margin-top:3px;
 }
+/* =========================
+   الزخارف العثمانية
+========================= */
 
+.ornament{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    width:90px;
+    justify-content:center;
+}
+
+.leaf{
+    width:16px;
+    height:16px;
+    border:2px solid #B8860B;
+    border-radius:0 100% 0 100%;
+    transform:rotate(45deg);
+    box-shadow:0 0 6px rgba(212,175,55,.35);
+}
+
+.left .leaf1{
+    transform:rotate(25deg);
+}
+
+.left .leaf2{
+    transform:rotate(-25deg);
+}
+
+.right .leaf1{
+    transform:rotate(-25deg);
+}
+
+.right .leaf2{
+    transform:rotate(25deg);
+}
+
+.center-dot{
+    width:8px;
+    height:8px;
+    background:#D4AF37;
+    border-radius:50%;
+    box-shadow:0 0 8px rgba(212,175,55,.6);
+}
 .top-buttons button:hover{
     transform:translateY(-3px);
     background:rgba(201,157,51,.9);
+}
+.open-btn:hover .leaf{
+    border-color:#E6C35A;
+    box-shadow:0 0 10px rgba(212,175,55,.7);
+}
+
+.open-btn:hover .center-dot{
+    background:#F4D97A;
+    box-shadow:0 0 12px rgba(212,175,55,.9);
 }
 /* =========================
    لوحة فتح البوابة
