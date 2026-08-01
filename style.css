@@ -384,48 +384,22 @@ body.entering{
 .rotate-box{
 
     width:90%;
-    max-width:420px;
+    max-width:540px;
 
-    background:#1b120d;
+    padding:45px 40px;
 
-    border:2px solid #A66A2C;
+    background:#f4e6c8;
 
-    border-radius:20px;
+    border-radius:6px;
 
-    padding:35px 25px;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+    color:#5a3415;
 
     text-align:center;
 
-    color:white;
+    font-family:"Aref Ruqaa", serif;
 
-    box-shadow:0 0 30px rgba(166,106,44,.35);
-
-}
-
-.phone-icon{
-
-    font-size:60px;
-
-    margin-bottom:15px;
-
-}
-
-.rotate-box h2{
-
-    color:#E5C06A;
-
-    margin-bottom:15px;
-
-    font-size:28px;
-
-}
-
-.rotate-box p{
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    color:#ddd;
+    position:relative;
 
 }
