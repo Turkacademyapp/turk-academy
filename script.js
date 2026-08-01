@@ -70,3 +70,23 @@ document.addEventListener("click",(e)=>{
     }
 
 });
+
+function checkOrientation() {
+
+    const rotateMessage = document.getElementById("rotateMessage");
+
+    if (window.innerWidth < 768 && window.innerHeight > window.innerWidth) {
+
+        rotateMessage.style.display = "flex";
+
+    } else {
+
+        rotateMessage.style.display = "none";
+
+    }
+
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("orientationchange", checkOrientation);
