@@ -110,8 +110,10 @@ body{
     font-weight: 700;
     letter-spacing: 1px;
 
-    color: #4A1020;
-    text-shadow: 0 2px 8px rgba(0,0,0,.45);
+    color: #C89B2A;   /* ذهبي غامق */
+    text-shadow:
+    0 1px 2px rgba(0,0,0,.75),
+    0 0 6px rgba(212,175,55,.25);
 
     transition: all .35s ease;
 }
@@ -138,8 +140,10 @@ body{
 
 .open-btn:hover{
     transform: translateX(-50%) scale(1.05);
-    color: #6E1F2A;
-    text-shadow: 0 0 12px rgba(0,0,0,.55);
+    color: #E2BE5F;
+    text-shadow:
+    0 0 8px rgba(212,175,55,.45),
+    0 0 16px rgba(212,175,55,.25);
 }
 
 .open-btn:active{
