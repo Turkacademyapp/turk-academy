@@ -361,3 +361,71 @@ body.entering{
     color:white;
 
 }
+/* =========================
+   رسالة تدوير الهاتف
+========================= */
+
+.rotate-message{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.95);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.rotate-box{
+
+    width:90%;
+    max-width:420px;
+
+    background:#1b120d;
+
+    border:2px solid #A66A2C;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 0 30px rgba(166,106,44,.35);
+
+}
+
+.phone-icon{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+}
+
+.rotate-box h2{
+
+    color:#E5C06A;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+.rotate-box p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#ddd;
+
+}
