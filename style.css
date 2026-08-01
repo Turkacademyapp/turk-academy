@@ -88,101 +88,67 @@ body{
 /* =========================
    لوحة فتح البوابة
 ========================= */
-
 .open-btn{
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
+    z-index: 10;
 
-position:absolute;
+    background: transparent;
+    border: none;
 
-left:50%;
-bottom:35px;
-transform:translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
 
-z-index:10;
+    cursor: pointer;
 
-background:transparent;
-border:none;
+    font-family: "Aref Ruqaa", serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
 
-display:flex;
-align-items:center;
-justify-content:center;
+    color: #4A1020;
+    text-shadow: 0 2px 8px rgba(0,0,0,.45);
 
-gap:22px;
-
-cursor:pointer;
-
-font-family:"Cairo",sans-serif;
-font-size:26px;
-font-weight:800;
-
-color:#f5df9b;
-
-letter-spacing:.5px;
-
-transition:.35s;
+    transition: all .35s ease;
 }
 
+/* الخط المزخرف يمين ويسار */
 .open-btn::before,
 .open-btn::after{
-
-content:"";
-
-width:110px;
-height:2px;
-
-background:linear-gradient(
-90deg,
-transparent,
-#8a6615 0%,
-#c89b2a 20%,
-#f5df9b 50%,
-#c89b2a 80%,
-#8a6615 100%,
-transparent
-);
-
-position:relative;
+    content: "❈ ❦ ❈";
+    color: #B88A2A;
+    font-size: 18px;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 0 8px rgba(212,175,55,.35);
 }
 
 .open-btn::before{
-
-box-shadow:
-25px 0 0 -1px #d4af37,
-50px 0 0 -1px #b8860b,
-75px 0 0 -1px #d4af37;
-
+    margin-right: 18px;
 }
 
 .open-btn::after{
-
-box-shadow:
--25px 0 0 -1px #d4af37,
--50px 0 0 -1px #b8860b,
--75px 0 0 -1px #d4af37;
-
+    margin-left: 18px;
 }
 
 .open-btn:hover{
-
-transform:translateX(-50%) translateY(-3px);
-
-color:#ffe9b0;
-
-text-shadow:
-0 0 10px rgba(212,175,55,.45);
-
+    transform: translateX(-50%) scale(1.05);
+    color: #6E1F2A;
+    text-shadow: 0 0 12px rgba(0,0,0,.55);
 }
 
 .open-btn:active{
-
-transform:translateX(-50%) translateY(2px);
-
+    transform: translateX(-50%) scale(.98);
 }
 
-}
 /* =========================
    الهاتف
 ========================= */
-
 @media (max-width:768px){
 
     .top-buttons{
@@ -201,15 +167,20 @@ transform:translateX(-50%) translateY(2px);
     }
 
     .open-btn{
-        width:85%;
-        max-width:320px;
-        padding:16px;
-        font-size:20px;
+        font-size:24px;
+        gap:14px;
         bottom:30px;
     }
+
+    .open-btn::before,
+    .open-btn::after{
+        width:60px;
+    }
 }
+
+/* انتقال الصفحة */
 body{
-    transition: opacity 0.9s ease, transform 0.9s ease;
+    transition: opacity .9s ease, transform .9s ease;
 }
 
 body.entering{
