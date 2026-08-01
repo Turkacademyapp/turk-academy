@@ -42,3 +42,31 @@ document.addEventListener("click",(e)=>{
     }
 
 });
+const settingsBtn = document.querySelector("#settingsBtn");
+const settingsMenu = document.querySelector("#settingsMenu");
+
+
+settingsBtn.addEventListener("click", (e)=>{
+
+    e.stopPropagation();
+
+    settingsMenu.style.display =
+    settingsMenu.style.display === "flex"
+    ? "none"
+    : "flex";
+
+});
+
+
+document.addEventListener("click",(e)=>{
+
+    if(
+        !settingsMenu.contains(e.target) &&
+        !settingsBtn.contains(e.target)
+    ){
+
+        settingsMenu.style.display="none";
+
+    }
+
+});
