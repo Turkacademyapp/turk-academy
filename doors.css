@@ -112,6 +112,7 @@ left:830px;
 top:260px;
 width:180px;
 height:180px;
+background: cyan;    
 }
 
 /* القاموس */
@@ -120,6 +121,7 @@ height:180px;
     top:135px;
     width:180px;
     height:180px;
+    background: purple;
 }
 
 /* استكشف تركيا */
@@ -128,6 +130,7 @@ left:1490px;
 top:100px;
 width:180px;
 height:180px;
+background: yellow;   
 }
 
 /* التحديات */
@@ -136,6 +139,7 @@ height:180px;
     top:455px;
     width:180px;
     height:180px;
+    background: orange;
 }
 
 /* الملف الشخصي */
@@ -144,4 +148,5 @@ height:180px;
     top:465px;
     width:180px;
     height:180px;
+    background: pink;
 }
