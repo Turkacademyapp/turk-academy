@@ -136,7 +136,7 @@ background: yellow;
 /* التحديات */
 .challenges{
     left:900px;
-    top:455px;
+    top:50px;
     width:180px;
     height:180px;
     background: orange;
@@ -145,7 +145,7 @@ background: yellow;
 /* الملف الشخصي */
 .profile{
     left:1450px;
-    top:465px;
+    top:50px;
     width:180px;
     height:180px;
     background: pink;
