@@ -78,67 +78,67 @@ body{
 /* عند المرور بالفأرة */
 .door:hover{
     border:2px solid rgba(255,215,0,.8);
-}
-/* الأكاديمية */
+} 
+/* الأكاديمية - أعلى اليسار */
 .academy{
-    top:22%;
-    left:5%;
-    width:13%;
-    height:30%;
+    top:18%;
+    left:4%;
+    width:14%;
+    height:31%;
 }
 
-/* المسرح */
+/* المسرح - أمام الأكاديمية */
 .theater{
     top:22%;
-    left:23%;
+    left:22%;
     width:10%;
     height:17%;
 }
 
-/* الثقافة */
+/* الثقافة - أسفل اليسار */
 .culture{
-    top:50%;
-    left:7%;
+    top:55%;
+    left:6%;
     width:10%;
     height:17%;
 }
 
-/* المستوى الثاني */
+/* بوابة المستوى الثاني - أعلى المنتصف */
 .level2{
     top:10%;
-    left:44%;
+    left:42%;
     width:12%;
     height:19%;
 }
 
-/* القاموس */
+/* القاموس - أمام استكشف تركيا */
 .dictionary{
     top:39%;
-    left:39%;
-    width:9%;
+    left:50%;
+    width:10%;
     height:17%;
 }
 
-/* استكشف تركيا */
+/* استكشف تركيا - أعلى اليمين */
 .explore{
-    top:22%;
-    left:66%;
+    top:21%;
+    left:69%;
     width:10%;
     height:17%;
 }
 
-/* التحديات */
+/* التحديات - لا تغيّره */
 .challenges{
-    top:49%;
-    left:66%;
+    top:55%;
+    left:60%;
     width:10%;
-    height:17%;
+    height:18%;
 }
 
-/* الملف الشخصي */
+/* الملف الشخصي - أسفل اليمين */
 .profile{
-    top:69%;
-    left:66%;
+    top:72%;
+    left:69%;
     width:10%;
     height:17%;
 }
