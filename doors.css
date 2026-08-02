@@ -44,3 +44,91 @@ body{
     }
 
 }
+/* القاعة */
+
+.hall{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* الصورة */
+
+.hall-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* مناطق النقر */
+
+.door{
+    position:absolute;
+
+    border:2px solid rgba(255,255,255,0);
+
+    cursor:pointer;
+}
+
+/* عند المرور بالفأرة */
+
+.door:hover{
+    border:2px solid rgba(255,215,0,.5);
+}
+.academy{
+    top:65%;
+    left:40%;
+    width:10%;
+    height:18%;
+}
+
+.theater{
+    top:55%;
+    left:20%;
+    width:10%;
+    height:18%;
+}
+
+.challenges{
+    top:55%;
+    left:60%;
+    width:10%;
+    height:18%;
+}
+
+.dictionary{
+    top:40%;
+    left:30%;
+    width:10%;
+    height:18%;
+}
+
+.explore{
+    top:40%;
+    left:50%;
+    width:10%;
+    height:18%;
+}
+
+.culture{
+    top:25%;
+    left:20%;
+    width:10%;
+    height:18%;
+}
+
+.profile{
+    top:25%;
+    left:60%;
+    width:10%;
+    height:18%;
+}
+
+.level2{
+    top:10%;
+    left:40%;
+    width:12%;
+    height:20%;
+}
