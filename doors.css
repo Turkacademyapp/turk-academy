@@ -67,13 +67,9 @@ body{
 =========================== */
 
 .door{
-    position:absolute;
-    width:12%;
-    height:18%;
-    background:rgba(255,0,0,.35);
-    border:2px solid yellow;
-    cursor:pointer;
-    box-sizing:border-box;
+    position: absolute;
+    width: 180px;
+    height: 180px;
 }
 
 /* عند المرور بالفأرة */
@@ -81,66 +77,42 @@ body{
     border:2px solid rgba(255,215,0,.8);
 }
 
-/* الأكاديمية */
 .academy{
-    top:24%;
-    left:5%;
-    width:14%;
-    height:29%;
+    left: 35px;
+    top: 120px;
 }
 
-/* المسرح */
 .theater{
-    top:29%;
-    left:24%;
-    width:10%;
-    height:16%;
+    left: 310px;
+    top: 160px;
 }
 
-/* الثقافة */
 .culture{
-    top:60%;
-    left:7%;
-    width:11%;
-    height:14%;
+    left: 35px;
+    top: 500px;
 }
 
-/* البوابة الذهبية */
 .level2{
-    top:41%;
-    left:45%;
-    width:11%;
-    height:18%;
+    left: 760px;
+    top: 250px;
 }
 
-/* القاموس */
 .dictionary{
-    top:29%;
-    left:71%;
-    width:11%;
-    height:16%;
+    left: 1160px;
+    top: 160px;
 }
 
-/* استكشف تركيا */
 .explore{
-    top:19%;
-    left:89%;
-    width:11%;
-    height:18%;
+    left: 1450px;
+    top: 70px;
 }
 
-/* التحديات */
 .challenges{
-    top:58%;
-    left:67%;
-    width:12%;
-    height:14%;
+    left: 1120px;
+    top: 500px;
 }
 
-/* الملف الشخصي */
 .profile{
-    top:73%;
-    left:72%;
-    width:12%;
-    height:15%;
+    left: 1450px;
+    top: 500px;
 }
