@@ -92,8 +92,8 @@ body{
 
 /* المسرح */
 .theater{
-    left:310px;
-    top:170px;
+    left:295px;
+    top:175px;
     width:180px;
     height:180px;
 }
@@ -101,28 +101,28 @@ body{
 /* الثقافة */
 .culture{
     left:35px;
-    top:470px;
+    top:455px;
     width:180px;
     height:180px;
 }
 
 /* البوابة الذهبية */
 .level2{
-    left:760px;
-    top:250px;
+    left:720px;
+    top:240px;
     width:180px;
     height:180px;
 }
 
 /* القاموس */
 .dictionary{
-    left:1170px;
-    top:145px;
+    left:1185px;
+    top:135px;
     width:180px;
     height:180px;
 }
 
-/* اكتشف تركيا */
+/* استكشف تركيا */
 .explore{
     left:1450px;
     top:70px;
@@ -132,33 +132,16 @@ body{
 
 /* التحديات */
 .challenges{
-    left:1120px;
-    top:500px;
+    left:1135px;
+    top:455px;
     width:180px;
     height:180px;
 }
 
 /* الملف الشخصي */
 .profile{
-    left:1470px;
-    top:480px;
+    left:1450px;
+    top:465px;
     width:180px;
     height:180px;
-}
-.challenges{
-    left:1120px;
-    top:500px;
-    width:180px;
-    height:180px;
-    background:red !important;
-    border:4px solid white !important;
-}
-
-.level2{
-    left:760px;
-    top:250px;
-    width:180px;
-    height:180px;
-    background:blue !important;
-    border:4px solid white !important;
 }
