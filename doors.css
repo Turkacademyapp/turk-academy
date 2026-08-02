@@ -78,43 +78,58 @@ body{
 .door:hover{
     border:2px solid rgba(255,215,0,.8);
 }
-
 .academy{
-    left: 35px;
-    top: 120px;
+left: 35px;
+top: 140px;      /* نزل قليلاً */
+width: 180px;
+height: 180px;
 }
 
 .theater{
-    left: 310px;
-    top: 160px;
+left: 290px;     /* إلى اليسار */
+top: 160px;
+width: 180px;
+height: 180px;
 }
 
 .culture{
-    left: 35px;
-    top: 500px;
+left: 35px;
+top: 480px;      /* ارفع قليلاً */
+width: 180px;
+height: 180px;
 }
 
 .level2{
-    left: 760px;
-    top: 250px;
+left: 780px;     /* إلى اليمين */
+top: 270px;      /* نزل قليلاً */
+width: 180px;
+height: 180px;
 }
 
 .dictionary{
-    left: 1160px;
-    top: 160px;
+left: 1180px;    /* إلى اليمين */
+top: 145px;      /* إلى الأعلى */
+width: 180px;
+height: 180px;
 }
 
 .explore{
-    left: 1450px;
-    top: 70px;
+left: 1450px;
+top: 70px;       /* لا تغيّر */
+width: 180px;
+height: 180px;
 }
 
 .challenges{
-    left: 1120px;
-    top: 500px;
+left: 1120px;
+top: 530px;      /* نزل قليلاً */
+width: 180px;
+height: 180px;
 }
 
 .profile{
-    left: 1450px;
-    top: 500px;
+left: 1470px;    /* إلى اليمين */
+top: 480px;      /* ارفع قليلاً */
+width: 180px;
+height: 180px;
 }
