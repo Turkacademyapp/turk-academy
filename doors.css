@@ -126,11 +126,11 @@ background: cyan;
 
 /* استكشف تركيا */
 .explore{
-left:1490px;
-top:100px;
-width:180px;
-height:180px;
-background: lime;   
+    left:700px;
+    top:120px;
+    width:180px;
+    height:180px;
+    background: black;
 }
 
 /* التحديات */
@@ -144,8 +144,8 @@ background: lime;
 
 /* الملف الشخصي */
 .profile{
-    left:1450px;
-    top:50px;
+    left:700px;
+    top:420px;
     width:180px;
     height:180px;
     background: pink;
