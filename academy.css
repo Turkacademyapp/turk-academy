@@ -22,10 +22,7 @@ body{
 .door{
     position:absolute;
     display:block;
-    cursor:pointer;
-
-    /* مؤقتًا حتى نرى مكان منطقة الضغط */
-    border:2px solid red;
+    cursor:pointer; 
 }
 
 .door1{
