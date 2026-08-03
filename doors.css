@@ -67,14 +67,14 @@ body{
 =========================== */
 
 .door{
-    position:absolute;
-    width:180px;
-    height:180px;
-    background:rgba(255,0,0,.35);
-    border:3px solid gold;
-    cursor:pointer;
-    z-index:9999;
-    display:block;
+position:absolute;
+width:180px;
+height:180px;
+background:transparent;
+border:none;
+cursor:pointer;
+z-index:9999;
+display:block;
 }
 
 /* عند المرور بالفأرة */
