@@ -13,3 +13,18 @@ door1.addEventListener("click", function (e) {
     }, 350);
 
 });
+const door2 = document.getElementById("door2");
+
+door2.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    door2.classList.add("open");
+
+    setTimeout(() => {
+
+        window.location.href = "a2.html";
+
+    }, 350);
+
+});
