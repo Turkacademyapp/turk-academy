@@ -118,7 +118,7 @@ background: cyan;
 /* القاموس */
 .dictionary{
     left:900px;
-    top:250px;
+    top:140px;
     width:180px;
     height:180px;
     background: purple;
@@ -127,7 +127,7 @@ background: cyan;
 /* استكشف تركيا */
 .explore{
     left:1120px;
-    top:150px;
+    top:160px;
     width:180px;
     height:180px;
     background: black;
