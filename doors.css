@@ -118,7 +118,7 @@ background: cyan;
 /* القاموس */
 .dictionary{
     left:900px;
-    top:135px;
+    top:250px;
     width:180px;
     height:180px;
     background: purple;
@@ -136,7 +136,7 @@ background: cyan;
 /* التحديات */
 .challenges{
     left:900px;
-    top:50px;
+    top:400px;
     width:180px;
     height:180px;
     background: orange;
