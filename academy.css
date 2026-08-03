@@ -23,8 +23,16 @@ body{
     position:absolute;
     display:block;
     cursor:pointer; 
+    border-radius:18px;
+    transition:0.25s ease;
 }
+.door:hover{
+    box-shadow:
+        0 0 18px rgba(255,215,0,.35),
+        inset 0 0 15px rgba(255,215,0,.18);
 
+    transform:scale(1.015);
+}
 .door1{
     left:31%;
     top:33%;
