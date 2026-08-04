@@ -64,3 +64,22 @@ background-size:cover;
     left:33%;
     top:40%;
 }
+.sign::before,
+.sign::after{
+    content:"";
+    position:absolute;
+    width:18px;
+    height:18px;
+    border:2px solid #d8b35d;
+    border-radius:50%;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.sign::before{
+    left:8px;
+}
+
+.sign::after{
+    right:8px;
+}
