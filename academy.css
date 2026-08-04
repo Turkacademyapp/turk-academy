@@ -50,5 +50,10 @@ background-size:cover;
     filter:brightness(1.25);
 }
 .door1-title{
-    position: absolute;
+position:absolute;
+top:40%;
+left:38%;
+color:white;
+font-size:30px;
+z-index:1000;
 }
