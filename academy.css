@@ -55,6 +55,8 @@ background-size:cover;
     width:60px;
     height:60px;
     border-radius:50%;
+    outline:2px solid rgba(255,230,170,.45);
+    outline-offset:3px;
     background:linear-gradient(180deg,#b8842a,#6d4518);
     border:2px solid #e7c46a;
     color:#fff4cf;
