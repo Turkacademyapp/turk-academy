@@ -49,3 +49,6 @@ body{
     transform:scale(1.03);
     filter:brightness(1.25);
 }
+.door1-title{
+    position: absolute;
+}
