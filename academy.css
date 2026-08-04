@@ -45,56 +45,8 @@ background-size:cover;
     width:14%;
     height:46%;
 }
-   <div class="door1-sign"></div>
 
 .open{
     transform:scale(1.03);
     filter:brightness(1.25);
-}
-.sign{
-    position:absolute;
-    width:160px;
-    height:40px;
-    background:#8b5a2b;
-    border:3px solid #c9a44d;
-    border-radius:18px;
-}
-
-.sign1{
-    left:32%;
-    top:40%;
-}
-.sign::before,
-.sign::after{
-    content:"";
-    position:absolute;
-    width:18px;
-    height:18px;
-    border:2px solid #d8b35d;
-    border-radius:50%;
-    top:50%;
-    transform:translateY(-50%);
-}
-
-.sign::before{
-    left:8px;
-}
-
-.sign::after{
-    right:8px;
-}
-.sign{
-    position: absolute;
-}
-
-.sign::before{
-    box-shadow:
-        0 -24px 0 #c9a44d,
-        0 -48px 0 #c9a44d;
-}
-
-.sign::after{
-    box-shadow:
-        0 -24px 0 #c9a44d,
-        0 -48px 0 #c9a44d;
 }
