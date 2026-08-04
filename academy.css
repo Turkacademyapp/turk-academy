@@ -50,3 +50,23 @@ background-size:cover;
     transform:scale(1.03);
     filter:brightness(1.25);
 }
+.badge{
+    position:absolute;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(180deg,#f8d978,#c89b2c);
+    color:#4b2e00;
+    font-weight:bold;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 0 12px rgba(255,215,0,.35);
+    z-index:1000;
+}
+
+.badge1{
+    left:35.5%;
+    top:24%;
+}
