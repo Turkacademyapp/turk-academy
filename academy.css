@@ -83,3 +83,18 @@ background-size:cover;
 .sign::after{
     right:8px;
 }
+.sign{
+    position: absolute;
+}
+
+.sign::before{
+    box-shadow:
+        0 -24px 0 #c9a44d,
+        0 -48px 0 #c9a44d;
+}
+
+.sign::after{
+    box-shadow:
+        0 -24px 0 #c9a44d,
+        0 -48px 0 #c9a44d;
+}
