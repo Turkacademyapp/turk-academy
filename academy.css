@@ -103,11 +103,9 @@ background-size:cover;
     text-shadow:0 2px 4px rgba(0,0,0,.7);
 }
 .ornament{
-    width:100%;
+    width:60%;
+    margin:auto;
     text-align:center;
-    color:#d8b25a;
-    font-size:20px;
-    line-height:1;
 }
 
 .ornament::before{
@@ -115,11 +113,13 @@ background-size:cover;
 }
 
 .top{
-    margin-bottom:8px;
+    margin-bottom:4px;
+    transform:translateY(-8px);
 }
 
 .bottom{
-    margin-top:8px;
+    margin-top:4px;
+    transform:translateY(8px);
 }
 .badge2{
     left:62.5%;
