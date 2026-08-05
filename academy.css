@@ -102,3 +102,22 @@ background-size:cover;
     color:#f3d68a;
     text-shadow:0 2px 4px rgba(0,0,0,.7);
 }
+.ornament{
+    width:100%;
+    text-align:center;
+    color:#d8b25a;
+    font-size:20px;
+    line-height:1;
+}
+
+.ornament::before{
+    content:"✦────❈────✦";
+}
+
+.top{
+    margin-bottom:8px;
+}
+
+.bottom{
+    margin-top:8px;
+}
