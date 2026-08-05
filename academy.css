@@ -169,75 +169,36 @@ body{
     box-sizing:border-box;
     cursor:pointer;
 }
-
 /* الصف العلوي */
-.lessons{
-    top:32%;
-    left:24%;
-    width:10%;
-    height:20%;
-}
-
-.listening{
-    top:32%;
-    left:36%;
-    width:10%;
-    height:20%;
-}
-
-.speaking{
-    top:32%;
-    left:48%;
-    width:10%;
-    height:20%;
-}
-
-.writing{
-    top:32%;
-    left:60%;
-    width:10%;
-    height:20%;
-}
-
+.lessons,
+.listening,
+.speaking,
+.writing,
 .tests{
-    top:32%;
-    left:72%;
+    top:46%;
     width:10%;
-    height:20%;
+    height:18%;
 }
+
+.lessons{left:26%;}
+.listening{left:38%;}
+.speaking{left:50%;}
+.writing{left:62%;}
+.tests{left:74%;}
 
 /* الصف السفلي */
-.smarttest{
-    top:58%;
-    left:24%;
-    width:10%;
-    height:20%;
-}
-
-.review{
-    top:58%;
-    left:36%;
-    width:10%;
-    height:20%;
-}
-
-.askmaya{
-    top:58%;
-    left:48%;
-    width:10%;
-    height:20%;
-}
-
-.notebook{
-    top:58%;
-    left:60%;
-    width:10%;
-    height:20%;
-}
-
+.smarttest,
+.review,
+.askmaya,
+.notebook,
 .later{
-    top:58%;
-    left:72%;
+    top:69%;
     width:10%;
-    height:20%;
+    height:18%;
 }
+
+.smarttest{left:26%;}
+.review{left:38%;}
+.askmaya{left:50%;}
+.notebook{left:62%;}
+.later{left:74%;}
