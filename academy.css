@@ -113,13 +113,32 @@ background-size:cover;
 }
 .section-title{
     position:absolute;
-    top:11%;
+    top:9%;
     left:50%;
     transform:translateX(-50%);
-    color:#f3d68a;
-    font-size:34px;
+
+    padding:10px 34px;
+
+    color:#f7df9a;
+    font-size:38px;
     font-weight:700;
-    text-shadow:0 2px 8px rgba(0,0,0,.7);
-    letter-spacing:1px;
+    letter-spacing:2px;
+
+    background:linear-gradient(
+        180deg,
+        rgba(75,45,18,.75),
+        rgba(35,20,8,.75)
+    );
+
+    border:2px solid #e7c46a;
+    border-radius:50px;
+
+    box-shadow:
+        0 0 18px rgba(231,196,106,.35),
+        inset 0 0 12px rgba(255,235,170,.12);
+
+    text-shadow:
+        0 2px 5px rgba(0,0,0,.8);
+
     z-index:100;
 }
