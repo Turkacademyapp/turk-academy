@@ -185,19 +185,19 @@ body{
 }
 
 .listening{
-    left:35%;
+    left:34%;
 }
 
 .speaking{
-    left:47%;
+    left:46%;
 }
 
 .writing{
-    left:59%;
+    left:58%;
 }
 
 .tests{
-    left:71%;
+    left:70%;
 }
 
 /* الصف السفلي */
@@ -212,21 +212,21 @@ body{
 }
 
 .smarttest{
-    left:23%;
+    left:22%;
 }
 
 .review{
-    left:35%;
+    left:34%;
 }
 
 .askmaya{
-    left:47%;
+    left:46%;
 }
 
 .notebook{
-    left:59%;
+    left:58%;
 }
 
 .later{
-    left:71%;
+    left:70%;
 }
