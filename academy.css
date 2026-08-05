@@ -165,13 +165,79 @@ body{
 .door{
     position:absolute;
     border:3px solid red;
-    background:rgba(255,0,0,0.15);
-    cursor:pointer;
+    background:rgba(255,0,0,.15);
     box-sizing:border-box;
+    cursor:pointer;
 }
+
+/* الصف العلوي */
 .lessons{
-    top:35%;
-    left:25%;
-    width:12%;
-    height:24%;
+    top:32%;
+    left:24%;
+    width:10%;
+    height:20%;
+}
+
+.listening{
+    top:32%;
+    left:36%;
+    width:10%;
+    height:20%;
+}
+
+.speaking{
+    top:32%;
+    left:48%;
+    width:10%;
+    height:20%;
+}
+
+.writing{
+    top:32%;
+    left:60%;
+    width:10%;
+    height:20%;
+}
+
+.tests{
+    top:32%;
+    left:72%;
+    width:10%;
+    height:20%;
+}
+
+/* الصف السفلي */
+.smarttest{
+    top:58%;
+    left:24%;
+    width:10%;
+    height:20%;
+}
+
+.review{
+    top:58%;
+    left:36%;
+    width:10%;
+    height:20%;
+}
+
+.askmaya{
+    top:58%;
+    left:48%;
+    width:10%;
+    height:20%;
+}
+
+.notebook{
+    top:58%;
+    left:60%;
+    width:10%;
+    height:20%;
+}
+
+.later{
+    top:58%;
+    left:72%;
+    width:10%;
+    height:20%;
 }
