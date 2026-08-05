@@ -102,25 +102,6 @@ background-size:cover;
     color:#f3d68a;
     text-shadow:0 2px 4px rgba(0,0,0,.7);
 }
-.ornament{
-    width:60%;
-    margin:auto;
-    text-align:center;
-}
-
-.ornament::before{
-    content:"✦────❈────✦";
-}
-
-.top{
-    margin-bottom:4px;
-    transform:translateY(-8px);
-}
-
-.bottom{
-    margin-top:4px;
-    transform:translateY(8px);
-}
 .badge2{
     left:62.2%;
     top:22%;
