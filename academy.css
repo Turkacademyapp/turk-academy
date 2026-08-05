@@ -266,14 +266,14 @@ body{
     transition:.3s ease;
 }
 
-.lessons-label{top:65%;left:22%;}
-.listening-label{top:65%;left:34%;}
-.speaking-label{top:65%;left:45%;}
-.writing-label{top:65%;left:56%;}
-.tests-label{top:65%;left:68%;}
+.lessons-label{top:63%;left:22%;}
+.listening-label{top:63%;left:34%;}
+.speaking-label{top:63%;left:45%;}
+.writing-label{top:63%;left:56%;}
+.tests-label{top:63%;left:68%;}
 
-.smarttest-label{top:88%;left:22%;}
-.review-label{top:88%;left:34%;}
-.askmaya-label{top:88%;left:45%;}
-.notebook-label{top:88%;left:56%;}
-.later-label{top:88%;left:68%;}
+.smarttest-label{top:85%;left:22%;}
+.review-label{top:85%;left:34%;}
+.askmaya-label{top:85%;left:45%;}
+.notebook-label{top:85%;left:56%;}
+.later-label{top:85%;left:68%;}
