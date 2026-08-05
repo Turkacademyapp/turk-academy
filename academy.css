@@ -164,12 +164,14 @@ body{
 }
 .door{
     position:absolute;
+    border:3px solid red;
+    background:rgba(255,0,0,0.15);
     cursor:pointer;
-    background:transparent;
+    box-sizing:border-box;
 }
 .lessons{
-    top:22%;
-    left:14%;
-    width:20%;
-    height:22%;
+    top:35%;
+    left:25%;
+    width:12%;
+    height:24%;
 }
