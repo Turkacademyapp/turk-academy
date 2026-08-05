@@ -164,8 +164,8 @@ body{
 }
 .door{
     position:absolute;
-    border:3px solid red;
-    background:rgba(255,0,0,.15);
+    border:none;
+    background:transparent;
     box-sizing:border-box;
     cursor:pointer;
 }
