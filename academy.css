@@ -242,28 +242,23 @@ body{
     letter-spacing:1px;
 
     background:linear-gradient(
-        180deg,
-        #9b7440 0%,
-        #6d4720 40%,
-        #3d2410 100%
+        to bottom,
+        #4a2208,
+        #2f1205,
+        #1a0902
     );
+
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
 
     text-shadow:
-        0 1px 0 rgba(255,255,255,.40),
-        0 -1px 0 rgba(45,25,10,.45),
-        0 2px 4px rgba(0,0,0,.30);
+        0 1px 0 rgba(255,240,220,.25),
+        0 -1px 0 rgba(20,8,3,.8),
+        0 2px 3px rgba(0,0,0,.45);
 
-    filter:
-        contrast(1.1)
-        brightness(.95);
-
-    user-select:none;
     pointer-events:none;
-
-    transition:.3s ease;
+    user-select:none;
 }
 
 .lessons-label{top:63%;left:22%;}
