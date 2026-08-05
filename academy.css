@@ -242,11 +242,11 @@ body{
     letter-spacing:1px;
 
     background:linear-gradient(
-        to bottom,
-        #4a2208,
-        #2f1205,
-        #1a0902
-    );
+    to bottom,
+    #2b1205,
+    #170803,
+    #0d0401
+);
 
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
@@ -261,11 +261,11 @@ body{
     user-select:none;
 }
 
-.lessons-label{top:63%;left:22%;}
-.listening-label{top:63%;left:34%;}
-.speaking-label{top:63%;left:45%;}
-.writing-label{top:63%;left:56%;}
-.tests-label{top:63%;left:68%;}
+.lessons-label{top:60.5%;left:23%;}
+.listening-label{top:60.5%;left:34%;}
+.speaking-label{top:60.5%;left:45%;}
+.writing-label{top:60.5%;left:56%;}
+.tests-label{top:60.5%;left:67%;}
 
 .smarttest-label{top:85%;left:22%;}
 .review-label{top:85%;left:34%;}
