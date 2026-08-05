@@ -175,16 +175,16 @@ body{
 .speaking,
 .writing,
 .tests{
-    top:46%;
+    top:48%;
     width:10%;
     height:18%;
 }
 
-.lessons{left:26%;}
-.listening{left:38%;}
-.speaking{left:50%;}
-.writing{left:62%;}
-.tests{left:74%;}
+.lessons{left:27%;}
+.listening{left:39%;}
+.speaking{left:51%;}
+.writing{left:63%;}
+.tests{left:75%;}
 
 /* الصف السفلي */
 .smarttest,
@@ -192,13 +192,13 @@ body{
 .askmaya,
 .notebook,
 .later{
-    top:69%;
+    top:71%;
     width:10%;
     height:18%;
 }
 
-.smarttest{left:26%;}
-.review{left:38%;}
-.askmaya{left:50%;}
-.notebook{left:62%;}
-.later{left:74%;}
+.smarttest{left:27%;}
+.review{left:39%;}
+.askmaya{left:51%;}
+.notebook{left:63%;}
+.later{left:75%;}
