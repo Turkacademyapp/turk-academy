@@ -142,3 +142,15 @@ background-size:cover;
 
     z-index:100;
 }
+.hall{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hall img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
