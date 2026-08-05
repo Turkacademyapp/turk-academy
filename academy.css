@@ -162,3 +162,14 @@ body{
     /* تغطي الشاشة */
     background-size:cover;
 }
+.door{
+    position:absolute;
+    cursor:pointer;
+    background:transparent;
+}
+.lessons{
+    top:22%;
+    left:14%;
+    width:20%;
+    height:22%;
+}
