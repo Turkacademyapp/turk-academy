@@ -111,3 +111,15 @@ background-size:cover;
     left:58%;
     top:37%;
 }
+.section-title{
+    position:absolute;
+    top:8%;
+    left:50%;
+    transform:translateX(-50%);
+    color:#f3d68a;
+    font-size:34px;
+    font-weight:700;
+    text-shadow:0 2px 8px rgba(0,0,0,.7);
+    letter-spacing:1px;
+    z-index:100;
+}
